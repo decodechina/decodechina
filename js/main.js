@@ -270,15 +270,8 @@ function initApplicationForm() {
                 body: JSON.stringify(data)
             });
 
-            // no-cors 模式下响应不可读，发送完成即认为成功
-            form.style.display = 'none';
-            const policyBlock = document.querySelector('.policy-text-block');
-            if (policyBlock) policyBlock.style.display = 'none';
-            const successMsg = document.getElementById('success-message');
-            if (successMsg) {
-                successMsg.style.display = 'block';
-                successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
+            // no-cors 模式下响应不可读，发送完成即无缝跳转到成功确认专属页面
+            window.location.href = 'success.html';
         } catch (error) {
             console.error('Network Error:', error);
             alert('网络错误，提交失败，请重试！');
