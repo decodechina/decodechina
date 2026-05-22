@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目行程 | 解码中国</title>
+    <meta name="description" content="项目行程 - Decode China Program Itinerary">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(163,51,39,0.03) 40%, rgba(197,160,89,0.04) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 背景装饰图层 -->
+    <div class="bg-decor">
+        <div class="bg-grid"></div>
+        <div class="bg-motif"></div>
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <h2>解码中国</h2>
+                    <span class="subtitle">Decode China</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a></li>
+                <li><a href="index.html#about"><span class="lang-zh">关于我们</span><span class="lang-en">About</span></a></li>
+                <li><a href="stories.html" class="active"><span class="lang-zh">项目行程</span><span class="lang-en">Itinerary</span></a></li>
+                <li><a href="apply.html#apply-form" class="nav-btn-highlight"><span class="lang-zh">立即报名</span><span class="lang-en">Apply Now</span></a></li>
+                <li class="lang-switcher">
+                    <button class="lang-btn" data-lang="zh">CN</button>
+                    <span style="color: var(--text-muted); font-size: 0.7rem;">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 style="background: var(--gradient-primary); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;"><span class="lang-zh">项目行程</span><span class="lang-en">Program Itinerary</span></h1>
+            <p class="page-subtitle"><span class="lang-en">June 15-21, 2026 | Beijing</span><span class="lang-zh">2026年6月15-21日 | 北京</span></p>
+            <p class="page-description">
+                <span class="lang-zh">无论你正在打造产品、投资前沿科技、制定企业战略，还是准备迈向领导岗位，理解中国科技生态，已经不再是可选项。<br><br>一场以北京中关村为核心坐标、深入中国 AI、机器人、先进制造与创新生态的 7 天沉浸式体验。</span>
+                <span class="lang-en">Whether you are building products, investing in frontier tech, shaping corporate strategy, or preparing for leadership roles, understanding China's tech ecosystem is no longer optional.<br><br>A curated deep dive into China’s AI, robotics, manufacturing, and innovation ecosystem — centered in Beijing’s Zhongguancun, the birthplace of China’s modern technology industry.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- 行程列表 -->
+    <section class="stories-section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="timeline">
+                <!-- Day 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">DAY 1</span>
+                        <h3 class="timeline-title">
+                            <span class="lang-zh">抵达北京 · 开营交流</span>
+                            <span class="lang-en">Arrival & Opening Session</span>
+                        </h3>
+                        <p class="timeline-desc">
+                            <span class="lang-zh">抵达北京，入住中关村核心区域酒店。<br><br>晚间举办开营晚宴与主题交流：<br><b>《2026：中国科技竞争力的真相》</b><br><br>与来自科技、投资、学术等领域的嘉宾及同行展开交流。</span>
+                            <span class="lang-en">Arrive in Beijing and check into the Zhongguancun core area.<br><br>Evening opening dinner and keynote discussion:<br><b>“Understanding China’s Technology Landscape in 2026”</b><br><br>Meet fellow participants, industry practitioners, and invited guests from academia, investment, and technology sectors.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">DAY 2</span>
+                        <h3 class="timeline-title">
+                            <span class="lang-zh">算力革命与芯片生态</span>
+                            <span class="lang-en">Computing Infrastructure & Semiconductor Ecosystem</span>
+                        </h3>
+                        <p class="timeline-desc">
+                            <span class="lang-zh">深入中国自研 GPU 企业，了解：<br>• AI 算力基础设施<br>• GPU 技术路线<br>• 大模型推理生态<br><br>观察全球供应链与智能制造系统如何协同运作。<br><br>晚间数字生活体验：体验北京移动支付与数字人民币生态。</span>
+                            <span class="lang-en">Visit one of China’s leading domestic GPU companies and explore:<br>• AI computing infrastructure<br>• GPU development<br>• large model inference systems<br><br>Understand how China’s global supply chain and smart manufacturing systems operate at scale.<br><br>Evening Digital Experience: Experience Beijing’s mobile-first urban ecosystem through digital RMB, mobile payments, and smart city infrastructure.</span>
+                        </p>
+                        <div class="timeline-location">
+                            📍 
+                            <span class="lang-zh">摩尔线程 GPU 实验室 / 联想未来中心</span>
+                            <span class="lang-en">Moore Threads GPU Lab / Lenovo Future Center</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">DAY 3</span>
+                        <h3 class="timeline-title">
+                            <span class="lang-zh">AI 大模型与自动驾驶</span>
+                            <span class="lang-en">AI & Autonomous Mobility</span>
+                        </h3>
+                        <p class="timeline-desc">
+                            <span class="lang-zh">与研究员交流中国大模型与开源 AI 生态。<br><br>体验 L4 级 Robotaxi 自动驾驶与智能交通系统。<br><br><b>AI 沙龙交流</b>：与 AI 创业者、研究员及投资人进行深度交流。</span>
+                            <span class="lang-en">Engage with researchers and explore large language models, open-source AI ecosystems, and China’s AI research landscape.<br><br>Experience L4 autonomous Robotaxi demonstrations and intelligent transportation systems in real urban environments.<br><br><b>Evening AI Salon</b>: Private networking session with local AI founders, developers, researchers, and investors.</span>
+                        </p>
+                        <div class="timeline-location">
+                            📍 
+                            <span class="lang-zh">北京智源人工智能研究院（BAAI）/ 百度 Apollo Park</span>
+                            <span class="lang-en">BAAI / Baidu Apollo Park</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">DAY 4</span>
+                        <h3 class="timeline-title">
+                            <span class="lang-zh">顶级学术与创新生态</span>
+                            <span class="lang-en">Universities, Innovation Policy & Ecosystem Development</span>
+                        </h3>
+                        <p class="timeline-desc">
+                            <span class="lang-zh">围绕中国创新模式、产业政策与全球科技竞争展开闭门交流。<br><br>系统理解中国科技产业 40 年演进历程：从联想、新浪到 AI、机器人与前沿创新企业。</span>
+                            <span class="lang-en">Closed-door discussions on China’s innovation model, industrial policy, and technology & globalization.<br><br>Trace the evolution of China’s technology ecosystem: from Lenovo and Sina to AI, robotics, and frontier innovation companies.</span>
+                        </p>
+                        <div class="timeline-location">
+                            📍 
+                            <span class="lang-zh">清华大学苏世民书院 / 中关村展示中心</span>
+                            <span class="lang-en">Schwarzman College, Tsinghua University / ZGC Exhibition Center</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 5 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">DAY 5</span>
+                        <h3 class="timeline-title">
+                            <span class="lang-zh">生命科学与具身智能</span>
+                            <span class="lang-en">Biotechnology & Embodied AI</span>
+                        </h3>
+                        <p class="timeline-desc">
+                            <span class="lang-zh">了解 AI 如何推动生物医药、新药发现与生命科学创新。<br><br>现场观摩具身智能与机器人视觉大模型在真实、非结构化环境中的运作与演示。</span>
+                            <span class="lang-en">Explore how AI is accelerating biotechnology, drug discovery, and life science innovation.<br><br>Observe embodied AI and robotic vision systems operating in real-world, unstructured environments.</span>
+                        </p>
+                        <div class="timeline-location">
+                            📍 
+                            <span class="lang-zh">百济神州 / 中关村生命科学园 / 银河通用机器人</span>
+                            <span class="lang-en">BeiGene / Changping Life Science Park / Galbot Robotics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">DAY 6</span>
+                        <h3 class="timeline-title">
+                            <span class="lang-zh">先进制造与物流自动化</span>
+                            <span class="lang-en">Advanced Manufacturing & Logistics Automation</span>
+                        </h3>
+                        <p class="timeline-desc">
+                            <span class="lang-zh">近距离观察“黑灯工厂”与高度自动化新能源汽车生产体系。每 76 秒产出一辆 SU7 的智能制造奇迹。<br><br>理解 AI 与机器人如何支撑大规模物流网络。<br><br><b>结业晚宴与证书颁发</b>：项目总结、交流与官方证书授予。</span>
+                            <span class="lang-en">Witness one of China’s most advanced “dark factories,” where Xiaomi SU7 vehicles roll off the production line in as little as 76 seconds.<br><br>Explore large-scale automation systems powering one of the world’s most sophisticated logistics networks.<br><br><b>Closing Dinner & Certificate Ceremony</b>: Program wrap-up, reflection, and networking dinner.</span>
+                        </p>
+                        <div class="timeline-location">
+                            📍 
+                            <span class="lang-zh">小米汽车超级工厂 / 京东物流中心</span>
+                            <span class="lang-en">Xiaomi EV Factory / JD.com Logistics Center</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 7 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">DAY 7</span>
+                        <h3 class="timeline-title">
+                            <span class="lang-zh">文化体验与返程</span>
+                            <span class="lang-en">Cultural Exploration & Departure</span>
+                        </h3>
+                        <p class="timeline-desc">
+                            <span class="lang-zh">参观故宫、天坛等北京文化地标。<br><br>随后送机返程。</span>
+                            <span class="lang-en">Visit iconic cultural landmarks such as the Forbidden City and the Temple of Heaven.<br><br>Airport transfer and departure.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program Themes -->
+            <div class="program-themes" style="margin-top: 5rem; text-align: center; border-top: 1px solid rgba(197, 160, 89, 0.3); padding-top: 4rem; padding-bottom: 2rem;">
+                <h3 style="font-size: 2.5rem; background: var(--gradient-primary); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 3rem; font-weight: 800;"><span class="lang-zh">项目核心主题</span><span class="lang-en">Program Themes</span></h3>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+                    <span class="btn btn-outline" style="border: 2px solid var(--primary-red); color: var(--primary-red); font-weight: 700; background: rgba(163, 51, 39, 0.03); pointer-events: none;"><span class="lang-zh">AI 与大模型</span><span class="lang-en">AI & Large Language Models</span></span>
+                    <span class="btn btn-outline" style="border: 2px solid var(--accent-gold); color: var(--accent-gold); font-weight: 700; background: rgba(197, 160, 89, 0.03); pointer-events: none;"><span class="lang-zh">机器人与具身智能</span><span class="lang-en">Robotics & Embodied Intelligence</span></span>
+                    <span class="btn btn-outline" style="border: 2px solid var(--primary-red); color: var(--primary-red); font-weight: 700; background: rgba(163, 51, 39, 0.03); pointer-events: none;"><span class="lang-zh">自动驾驶</span><span class="lang-en">Autonomous Mobility</span></span>
+                    <span class="btn btn-outline" style="border: 2px solid var(--accent-gold); color: var(--accent-gold); font-weight: 700; background: rgba(197, 160, 89, 0.03); pointer-events: none;"><span class="lang-zh">先进制造</span><span class="lang-en">Advanced Manufacturing</span></span>
+                    <span class="btn btn-outline" style="border: 2px solid var(--primary-red); color: var(--primary-red); font-weight: 700; background: rgba(163, 51, 39, 0.03); pointer-events: none;"><span class="lang-zh">半导体与算力基础设施</span><span class="lang-en">Semiconductor Ecosystems</span></span>
+                    <span class="btn btn-outline" style="border: 2px solid var(--accent-gold); color: var(--accent-gold); font-weight: 700; background: rgba(197, 160, 89, 0.03); pointer-events: none;"><span class="lang-zh">创新政策与全球科技竞争</span><span class="lang-en">Innovation Policy & Global Competition</span></span>
+                    <span class="btn btn-outline" style="border: 2px solid var(--primary-red); color: var(--primary-red); font-weight: 700; background: rgba(163, 51, 39, 0.03); pointer-events: none;"><span class="lang-zh">中国数字化城市生态</span><span class="lang-en">China’s Digital Urban Infrastructure</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提交您的故事 - 改为行动号召 -->
+    <section class="submit-story">
+        <div class="container">
+            <div class="submit-box">
+                <h2>准备好加入我们了吗？</h2>
+                <p>席位有限，采取滚动录取制，锁定 2026 年最重要的这一周。</p>
+                <a href="apply.html#apply-form" class="btn btn-primary">立即报名 Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>解码中国</h3>
+                    <p class="tagline">UNLOCK CHINA: 7-DAY HARD-TECH IMMERSION</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>快速链接</h4>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="stories.html">项目行程</a></li>
+                            <li><a href="apply.html">申请加入</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>联系我们</h4>
+                        <ul>
+                            <li><a href="mailto:contact@decodechina.org">contact@decodechina.org</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 解码中国 | Decode China. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

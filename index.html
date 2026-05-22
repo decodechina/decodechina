@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解码中国 | Decode China</title>
+    <meta name="description" content="解码中国 - Decode China">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 背景
+饰图层 -->
+    <div class="bg-decor">
+        <div class="bg-grid"></div>
+        <div class="bg-motif"></div>
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <h2>解码中国</h2>
+                    <span class="subtitle">Decode China</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><span class="lang-zh">首页</span><span
+                            class="lang-en">Home</span></a></li>
+                <li><a href="#about"><span class="lang-zh">
+                            关于我们</span><span class="lang-en">About</span></a></li>
+                <li><a href="stories.html"><span class="lang-zh">项目行程</span><span class="lang-en">Itinerary</span></a>
+                </li>
+                <li><a href="apply.html#apply-form" class="nav-btn-highlight"><span class="lang-zh">立即报名</span><span
+                            class="lang-en">Apply Now</span></a></li>
+                <li class="lang-switcher">
+                    <button class="lang-btn" data-lang="zh">CN</button>
+                    <span style="color: var(--text-muted); font-size: 0.7rem;">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主横区域 -->
+    <section class="hero"
+        style="position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 90vh;">
+        <!-- Background GIF -->
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; background-color: #000;">
+            <img src="assets/zgc-动态.gif" alt="Zhongguancun Beijing"
+                style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.85); opacity: 0.9;">
+            <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.65);">
+            </div>
+        </div>
+        <div class="container hero-container"
+            style="position: relative; z-index: 1; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <div class="hero-content reveal" style="padding: 4rem 1rem;">
+                <h1 class="main-slogan"
+                    style="font-family: 'Inter', sans-serif; font-size: 5rem; letter-spacing: -1px; color: #fff; margin-bottom: 2rem; font-weight: 800; text-shadow: 0 4px 30px rgba(0,0,0,0.8);">
+                    <span class="lang-en">Decode China</span><br><span class="lang-zh"
+                        style="font-size: 4rem;">解码中国</span>
+                </h1>
+                <div class="main-slogan-cn"
+                    style="font-family: 'Inter', sans-serif; color: #fff; margin: 0 auto 3.5rem auto; max-width: 800px; text-shadow: 0 2px 10px rgba(0,0,0,0.8); text-align: left; padding: 1.5rem 2rem; background: rgba(0,0,0,0.5); border-radius: 12px; border-left: 6px solid var(--primary-red); backdrop-filter: blur(4px);">
+                    <span class="lang-en" style="display: block;">
+                        <span
+                            style="font-size: 1.6rem; font-weight: 600; line-height: 1.5; display: block; margin-bottom: 0.8rem;">See
+                            China’s Technology Revolution — <b style="color: var(--accent-gold);">From the
+                                Inside.</b></span>
+                        <span
+                            style="font-size: 1.15rem; font-weight: 400; opacity: 0.95; line-height: 1.6; display: block;">A
+                            curated 7-day immersion into AI, robotics, autonomous driving, advanced manufacturing, and
+                            the innovation ecosystem shaping the future of global technology.</span>
+                    </span>
+                    <span class="lang-zh" style="display: block;">
+                        <span
+                            style="font-size: 1.5rem; font-weight: 700; letter-spacing: 1.5px; line-height: 1.5; display: block; margin-bottom: 1rem;">深入中国
+                            AI、机器人、自动驾驶与先进制造核心现场。</span>
+                        <span
+                            style="font-size: 1.15rem; font-weight: 400; opacity: 0.9; letter-spacing: 1px; display: block;">7
+                            天沉浸式科技体验，<strong
+                                style="color: var(--accent-gold); font-weight: 600;">重新理解未来世界的创新与产业逻辑。</strong></span>
+                    </span>
+                </div>
+
+                <div class="sub-slogans reveal reveal-delay-1"
+                    style="margin-bottom: 3.5rem; border-left: none; padding-left: 0;">
+                    <div class="slogan-item"
+                        style="color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.8); background: rgba(0,0,0,0.5); padding: 1rem 1.5rem; border-radius: 12px; border-left: 6px solid var(--primary-red); backdrop-filter: blur(4px); display: inline-block; text-align: left;">
+                        <p class="en" style="margin: 0;">
+                            <span class="lang-en"
+                                style="font-size: 1.5rem; font-weight: 600; letter-spacing: 1.5px; line-height: 1.5; display: block; color: #fff;">Beijing
+                                · June 15–21, 2026</span>
+                            <span class="lang-zh"
+                                style="font-size: 1.5rem; font-weight: 700; letter-spacing: 1.5px; line-height: 1.5; display: block; color: #fff;">北京
+                                · 2026年6月15–21日</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cta-buttons reveal reveal-delay-2"
+                    style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="apply.html#apply-form" class="btn btn-primary"
+                        style="padding: 1rem 3rem; font-size: 1.15rem; border-radius: 40px; font-weight: 700; background: var(--gradient-primary); border: none; box-shadow: 0 8px 25px rgba(163,51,39,0.4);">
+                        <span class="lang-zh">立即报名</span><span class="lang-en">Apply Now</span>
+                    </a>
+                    <a href="stories.html" class="btn btn-secondary"
+                        style="padding: 1rem 3rem; font-size: 1.15rem; border-radius: 40px; font-weight: 700; box-shadow: 0 8px 25px rgba(0,0,0,0.2);">
+                        <span class="lang-zh">行程预览</span><span class="lang-en">Explore Program</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目介绍 - 创新引擎 -->
+    <section class="intro" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="lang-zh">创新引擎</span><span class="lang-en">Innovation Engine</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="intro-content reveal">
+                <p class="lead">
+                    <span class="lang-zh">穿透迷雾，看见未来</span>
+                    <span class="lang-en">Pierce the fog, see the future.</span>
+                </p>
+                <div class="audience-section"
+                    style="margin: 2rem 0; padding: 2rem; background: var(--bg-secondary); border-radius: 16px; border: 1px solid var(--glass-border);">
+                    <h4 style="color: var(--secondary-red); margin-bottom: 1.5rem;">
+                        <span class="lang-zh">面向人群</span><span class="lang-en">Target Audience</span>
+                    </h4>
+                    <ul
+                        style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem;">
+                        <li>🚀 <strong><span class="lang-zh">科技从业者</span><span class="lang-en">Tech
+                                    Professionals</span></strong></li>
+                        <li>🎓 <strong><span class="lang-zh">MBA 学生</span><span class="lang-en">MBA
+                                    Students</span></strong></li>
+                        <li>📈 <strong><span class="lang-zh">VC/PE 投资人</span><span class="lang-en">VC/PE
+                                    Investors</span></strong></li>
+                        <li>🔍 <strong><span class="lang-zh">咨询顾问</span><span
+                                    class="lang-en">Consultants</span></strong></li>
+                        <li>🎯 <strong><span class="lang-zh">企业战略人员</span><span class="lang-en">Corporate
+                                    Strategists</span></strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number"><span data-target="5000">0</span>+</div>
+                    <div class="stat-label">
+                        <span class="lang-zh">创新企业</span><span class="lang-en">Innovation Enterprises</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-target="20000">0</span>+</div>
+                    <div class="stat-label">
+                        <span class="lang-zh">高新企业</span><span class="lang-en">High-tech Enterprises</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-target="400">0</span>+</div>
+                    <div class="stat-label">
+                        <span class="lang-zh">上市企业</span><span class="lang-en">Listed Companies</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-target="102">0</span></div>
+                    <div class="stat-label">
+                        <span class="lang-zh">独角兽企业</span><span class="lang-en">Unicorn Companies</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-target="270">0</span>+</div>
+                    <div class="stat-label">
+                        <span class="lang-zh">日增科技企业</span><span class="lang-en">Daily New Tech Entities</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-target="40">0</span></div>
+                    <div class="stat-label">
+                        <span class="lang-zh">特色产业园</span><span class="lang-en">Featured Parks</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-target="300">0</span>+</div>
+                    <div class="stat-label">
+                        <span class="lang-zh">专业服务平台</span><span class="lang-en">Service Platforms</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number"><span data-target="600">0</span>+</div>
+                    <div class="stat-label">
+                        <span class="lang-zh">专家高管团队</span><span class="lang-en">Experts & Executives</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ZGC Spotlight -->
+            <div class="zgc-spotlight reveal"
+                style="margin-top: 4rem; background: var(--bg-secondary); padding: 3rem; border-radius: 20px; border-left: 5px solid var(--primary-red);">
+                <h3>
+                    <span class="lang-zh">中关村国家自主创新示范区</span>
+                    <span class="lang-en">ZGC National Independent Innovation Demonstration Zone</span>
+                </h3>
+                <p style="margin-top: 1.5rem;">
+                    <span
+                        class="lang-zh">被称为“中国硅谷”，中关村拥有超过20,000家高新技术企业，是许多中国科技巨头的摇篮。它代表了北京满活力的生态系统，初创企业在此规模化，全球化的公司在此创新。</span>
+                    <span class="lang-en">Known as "China's Silicon Valley," ZGC is home to over 20,000 high-tech
+                        enterprises and serves as the cradle for many of China's tech giants. It represents Beijing's
+                        dynamic ecosystem where startups scale and global companies innovate.</span>
+                </p>
+                <div class="company-logos"
+                    style="display: flex; gap: 2rem; margin-top: 2rem; align-items: center; flex-wrap: wrap;">
+                    <span style="font-weight: 700; font-size: 1.2rem;">ByteDance</span>
+                    <span style="font-weight: 700; font-size: 1.2rem;">Xiaomi | <span class="lang-zh">小米</span><span
+                            class="lang-en">Xiaomi</span></span>
+                    <span style="font-weight: 700; font-size: 1.2rem;">JD.COM | <span class="lang-zh">京东</span><span
+                            class="lang-en">JD.COM</span></span>
+                    <span style="font-weight: 700; font-size: 1.2rem;">Baidu | <span class="lang-zh">百度</span><span
+                            class="lang-en">Baidu</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心价值 - Why Join -->
+    <section class="values">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="lang-zh">为什么加入我们？</span><span class="lang-en">Why Join Decode China?</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card reveal reveal-delay-1">
+                    <div class="value-icon">🧠</div>
+                    <h3><span class="lang-zh">探索全栈科技</span><br><span
+                            style="font-size: 0.9rem; font-weight: 400;">Explore China's Full Tech Stack</span></h3>
+                    <p><span class="lang-zh">深入了解驱动中国崛起的系统：国产芯片、大语言模型、自动驾驶、人形机器人和数字化工厂。</span></p>
+                </div>
+                <div class="value-card reveal reveal-delay-2">
+                    <div class="value-icon">🤝</div>
+                    <h3>连接思想领袖 <br><span style="font-size: 0.9rem; font-weight: 400;">Connect with Thought
+                            Leaders</span></h3>
+                    <p>直接与人工智能研究人员、初创企业创始人、风险投资家和企业高管交流。</p>
+                </div>
+                <div class="value-card reveal reveal-delay-3">
+                    <div class="value-icon">🚀</div>
+                    <h3><span class="lang-zh">触达前沿领域</span><br><span style="font-size: 0.9rem; font-weight: 400;">Access
+                            the Frontier</span></h3>
+                    <p><span class="lang-zh">进入中国最具影响力的研究机构，从清华苏世民书院到北京智源人工智能研究院。</span></p>
+                </div>
+                <div class="value-card reveal reveal-delay-4">
+                    <div class="value-icon">👁️</div>
+                    <h3>亲眼见证未来 <br><span style="font-size: 0.9rem; font-weight: 400;">See It With Your Own Eyes</span>
+                    </h3>
+                    <p>在真实交通中乘坐无人驾驶出租车。观察人形机器人的运行。每一天都有重塑您认知的瞬间。</p>
+                </div>
+                <div class="value-card reveal reveal-delay-1">
+                    <div class="value-icon">💼</div>
+                    <h3><span class="lang-zh">把握未来机遇</span><br><span style="font-size: 0.9rem; font-weight: 400;">Engage
+                            in Future Opportunities</span></h3>
+                    <p><span class="lang-zh">在科技与全球科技的交汇点探索协作平台、研发网络和职业路径。</span></p>
+                </div>
+                <div class="value-card reveal reveal-delay-2">
+                    <div class="value-icon">🌐</div>
+                    <h3>构建全球网络 <br><span style="font-size: 0.9rem; font-weight: 400;">Build a Global Network</span></h3>
+                    <p>结识来自各行各业和不同地区的专业人士、投资和创新。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 如何参与 -->
+    <section class="how-to-join">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="lang-zh">项目亮点</span><span class="lang-en">Program Highlights</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="join-grid reveal">
+                <div class="values-grid">
+                    <div class="value-card reveal">
+                        <div class="value-icon">🚀</div>
+                        <h3><span class="lang-zh">自研 GPU 深度调研</span><span class="lang-en">GPU Deep Dive</span></h3>
+                        <p>
+                            <span class="lang-zh">摩尔线程 Moore Threads：深入解析国产 GPU 算力引擎。</span>
+                            <span class="lang-en">Moore Threads: Decoding domestic GPU computing engines.</span>
+                        </p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="value-icon">🤖</div>
+                        <h3><span class="lang-zh">L4 Robotaxi 体验</span><span class="lang-en">L4 Robotaxi
+                                Experience</span></h3>
+                        <p>
+                            <span class="lang-zh">百度 Apollo：亲自乘坐无人驾驶出租车，探讨出行未来。</span>
+                            <span class="lang-en">Baidu Apollo: Ride in an L4 Robotaxi and discuss the future of
+                                mobility.</span>
+                        </p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="value-icon">🎓</div>
+                        <h3><span class="lang-zh">清华闭门圆桌</span><span class="lang-en">Tsinghua Closed-door Panel</span>
+                        </h3>
+                        <p>
+                            <span class="lang-zh">苏世民书院：与专家探讨地缘政治与硬科技投资。</span>
+                            <span class="lang-en">Schwarzman College: Expert panel on geopolitics and hard-tech
+                                investment.</span>
+                        </p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="value-icon">🦾</div>
+                        <h3><span class="lang-zh">Galbot 机器人演示</span><span class="lang-en">Galbot Robot Demo</span></h3>
+                        <p>
+                            <span class="lang-zh">具身智能：现场观摩机器人执行复杂柔性任务。</span>
+                            <span class="lang-en">Embodied AI: Witness humanoid robots performing complex tasks.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚前的 CTA -->
+    <section class="cta-section" style="padding: 6rem 0; text-align: center; background: var(--bg-secondary);">
+        <div class="container">
+            <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;"><span class="lang-zh">准备好解码中国了吗？</span><span
+                    class="lang-en">READY TO DECODE CHINA?</span></h3>
+            <a href="apply.html#apply-form" class="btn btn-primary" style="margin-top: 2rem;">
+                <span class="lang-zh">立即报名</span><span class="lang-en">Apply Now</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><span class="lang-zh">解码中国</span><span class="lang-en">Decode China</span></h3>
+                    <p class="tagline">DECODE CHINA: 7-DAY HARD-TECH IMMERSION</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4><span class="lang-zh">快速链接</span><span class="lang-en">Quick Links</span></h4>
+                        <ul>
+                            <li><a href="index.html"><span class="lang-zh">首页</span><span
+                                        class="lang-en">Home</span></a></li>
+                            <li><a href="stories.html"><span class="lang-zh">项目行程</span><span
+                                        class="lang-en">Itinerary</span></a></li>
+                            <li><a href="apply.html"><span class="lang-zh">立即报名</span><span class="lang-en">Apply
+                                        Now</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4><span class="lang-zh">联系我们</span><span class="lang-en">Contact Us</span></h4>
+                        <ul>
+                            <li><a href="mailto:contact@decodechina.org">contact@decodechina.org</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="lang-zh">解码中国</span><span class="lang-en">Decode China</span>. All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
