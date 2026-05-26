@@ -212,6 +212,12 @@ function initApplicationForm() {
     const form = document.getElementById('application-form');
     if (!form) return;
 
+    const AIRTABLE_CONFIG = {
+        API_KEY: 'pat2zn1A0sXD9bYeS.2b6554e3e04d4fcedde45e4b0672faca14120fe6aca9d942da374bbda23e9a7e',
+        BASE_ID: 'appLCEbSoEveIgOKa',
+        TABLE_NAME: 'tbl0kAnY6UxImoylf'
+    };
+
     form.addEventListener('submit', async function (e) {
         e.preventDefault();
         
@@ -241,37 +247,42 @@ function initApplicationForm() {
             ? document.getElementById('hear-about-zh').value 
             : document.getElementById('hear-about-en').value;
         
-        // 通过 Airtable Webhook 传输数据 (免疫所有前端跨域限制且不需要在此暴露私人 Token)
-        const url = 'https://hooks.airtable.com/workflows/v1/genericWebhook/appLCEbSoEveIgOKa/wflDXDyj8ApAGEUxG/wtrYdNy3NbpxllSi3';
+        const url = `https://api.airtable.com/v0/${AIRTABLE_CONFIG.BASE_ID}/${AIRTABLE_CONFIG.TABLE_NAME}`;
 
-        // 扁平化数据结构给您的自动化工作流使用
         const data = {
-            "Name": name,
-            "Email": email,
-            "Phone": phone,
-            "Nationality": nationality,
-            "Role": role,
-            "Organization": organization,
-            "Hear About": hearAbout,
-            "Referral Code": referral,
-            "Dietary Needs": dietary,
-            "Other Info": otherInfo,
-            "Language": lang === 'zh' ? 'Chinese' : 'English'
+            fields: {
+                "Name": name,
+                "Email": email,
+                "Phone": phone,
+                "Nationality": nationality,
+                "Role": role,
+                "Organization": organization,
+                "Hear About": hearAbout,
+                "Referral Code": referral,
+                "Dietary Needs": dietary,
+                "Other Info": otherInfo,
+                "Language": lang === 'zh' ? 'Chinese' : 'English'
+            }
         };
 
         try {
-            // no-cors 模式要求使用简单请求头，text/plain 可绕过预检同时 Airtable 仍可识别 JSON 主体
-            await fetch(url, {
+            const response = await fetch(url, {
                 method: 'POST',
-                mode: 'no-cors',
                 headers: {
-                    'Content-Type': 'text/plain'
+                    'Authorization': `Bearer ${AIRTABLE_CONFIG.API_KEY}`,
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
             });
 
-            // no-cors 模式下响应不可读，发送完成即无缝跳转到成功确认专属页面
-            window.location.href = 'success.html';
+            if (response.ok) {
+                // 发送完成即无缝跳转到成功确认专属页面
+                window.location.href = 'success.html';
+            } else {
+                const errData = await response.json();
+                console.error('Airtable Error Response:', errData);
+                alert('提交失败：' + (errData.error?.message || '未知错误'));
+            }
         } catch (error) {
             console.error('Network Error:', error);
             alert('网络错误，提交失败，请重试！');
