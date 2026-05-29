@@ -53,10 +53,10 @@
     <!-- 主横区域 -->
     <section class="hero"
         style="position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 90vh;">
-        <!-- Background GIF -->
+        <!-- Background Image -->
         <div
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; background-color: #000;">
-            <img src="assets/zgc-动态.gif" alt="Zhongguancun Beijing"
+            <img src="assets/zgc-exhibition.jpg" alt="Zhongguancun Beijing"
                 style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.85); opacity: 0.9;">
             <div
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.65);">
@@ -123,7 +123,7 @@
         </div>
     </section>
 
-    <!-- 项目介绍 - 创新引擎 -->
+    <!-- 项目介绍 - 创新引擎 (中国/北京市有什么) -->
     <section class="intro" id="about">
         <div class="container">
             <div class="section-header">
@@ -132,31 +132,36 @@
             </div>
 
             <div class="intro-content reveal">
-                <p class="lead">
-                    <span class="lang-zh">穿透迷雾，看见未来</span>
-                    <span class="lang-en">Pierce the fog, see the future.</span>
+                <p class="lead" style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); border-left: 4px solid var(--primary-red); padding-left: 1.5rem; margin-bottom: 2rem;">
+                    <span class="lang-zh">在全球科技竞争格局重构的关键节点，中国已从“世界工厂”跃升为全球科技创新的核心力量之一，中国科技正以惊人的速度改写全球产业版图。而北京中关村，正是中国创新的 DNA 双螺旋。过去 40 年，每一个时代的科技浪潮都发源于此。这里有自研算力替代、最前沿的大语言模型开源生态、L4 级自动驾驶的城市落地，以及将效率做到极致的黑灯工厂。</span>
+                    <span class="lang-en">At the critical juncture of global tech restructuring, China has leaped from the "world's factory" to a core driving force of global tech innovation. Zhongguancun, Beijing, is the double helix of China's innovation DNA. For the past 40 years, every wave of technological revolution originated here —from homegrown computing power and cutting-edge LLM ecosystems to city-level L4 autonomous driving and dark factories optimizing efficiency to the absolute limit.</span>
                 </p>
-                <div class="audience-section"
-                    style="margin: 2rem 0; padding: 2rem; background: var(--bg-secondary); border-radius: 16px; border: 1px solid var(--glass-border);">
-                    <h4 style="color: var(--secondary-red); margin-bottom: 1.5rem;">
-                        <span class="lang-zh">面向人群</span><span class="lang-en">Target Audience</span>
-                    </h4>
-                    <ul
-                        style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem;">
-                        <li>🚀 <strong><span class="lang-zh">科技从业者</span><span class="lang-en">Tech
-                                    Professionals</span></strong></li>
-                        <li>🎓 <strong><span class="lang-zh">MBA 学生</span><span class="lang-en">MBA
-                                    Students</span></strong></li>
-                        <li>📈 <strong><span class="lang-zh">VC/PE 投资人</span><span class="lang-en">VC/PE
-                                    Investors</span></strong></li>
-                        <li>🔍 <strong><span class="lang-zh">咨询顾问</span><span
-                                    class="lang-en">Consultants</span></strong></li>
-                        <li>🎯 <strong><span class="lang-zh">企业战略人员</span><span class="lang-en">Corporate
-                                    Strategists</span></strong></li>
-                    </ul>
+            </div>
+
+            <!-- ZGC Spotlight -->
+            <div class="zgc-spotlight reveal"
+                style="margin-top: 2rem; margin-bottom: 3rem; background: var(--bg-secondary); padding: 3rem; border-radius: 20px; border-left: 5px solid var(--primary-red);">
+                <h3>
+                    <span class="lang-zh">中关村国家自主创新示范区</span>
+                    <span class="lang-en">ZGC National Independent Innovation Demonstration Zone</span>
+                </h3>
+                <p style="margin-top: 1.5rem;">
+                    <span
+                        class="lang-zh">被称为“中国硅谷”，中关村拥有超过20,000家高新技术企业，是许多中国科技巨头的摇篮。它代表了北京满活力的生态系统，初创企业在此规模化，全球化的公司在此创新。</span>
+                    <span class="lang-en">Known as "China's Silicon Valley," ZGC is home to over 20,000 high-tech
+                        enterprises and serves as the cradle for many of China's tech giants. It represents Beijing's
+                        dynamic ecosystem where startups scale and global companies innovate.</span>
+                </p>
+                <div class="company-logos"
+                    style="display: flex; gap: 2rem; margin-top: 2rem; align-items: center; flex-wrap: wrap;">
+                    <span style="font-weight: 700; font-size: 1.2rem;">ByteDance</span>
+                    <span style="font-weight: 700; font-size: 1.2rem;"><span class="lang-zh">Xiaomi | 小米</span><span class="lang-en">Xiaomi</span></span>
+                    <span style="font-weight: 700; font-size: 1.2rem;"><span class="lang-zh">JD.COM | 京东</span><span class="lang-en">JD.COM</span></span>
+                    <span style="font-weight: 700; font-size: 1.2rem;"><span class="lang-zh">Baidu | 百度</span><span class="lang-en">Baidu</span></span>
                 </div>
             </div>
 
+            <!-- Stats/Numbers -->
             <div class="stats">
                 <div class="stat-item">
                     <div class="stat-number"><span data-target="5000">0</span>+</div>
@@ -207,121 +212,477 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- ZGC Spotlight -->
-            <div class="zgc-spotlight reveal"
-                style="margin-top: 4rem; background: var(--bg-secondary); padding: 3rem; border-radius: 20px; border-left: 5px solid var(--primary-red);">
-                <h3>
-                    <span class="lang-zh">中关村国家自主创新示范区</span>
-                    <span class="lang-en">ZGC National Independent Innovation Demonstration Zone</span>
-                </h3>
-                <p style="margin-top: 1.5rem;">
-                    <span
-                        class="lang-zh">被称为“中国硅谷”，中关村拥有超过20,000家高新技术企业，是许多中国科技巨头的摇篮。它代表了北京满活力的生态系统，初创企业在此规模化，全球化的公司在此创新。</span>
-                    <span class="lang-en">Known as "China's Silicon Valley," ZGC is home to over 20,000 high-tech
-                        enterprises and serves as the cradle for many of China's tech giants. It represents Beijing's
-                        dynamic ecosystem where startups scale and global companies innovate.</span>
-                </p>
-                <div class="company-logos"
-                    style="display: flex; gap: 2rem; margin-top: 2rem; align-items: center; flex-wrap: wrap;">
-                    <span style="font-weight: 700; font-size: 1.2rem;">ByteDance</span>
-                    <span style="font-weight: 700; font-size: 1.2rem;"><span class="lang-zh">Xiaomi | 小米</span><span class="lang-en">Xiaomi</span></span>
-                    <span style="font-weight: 700; font-size: 1.2rem;"><span class="lang-zh">JD.COM | 京东</span><span class="lang-en">JD.COM</span></span>
-                    <span style="font-weight: 700; font-size: 1.2rem;"><span class="lang-zh">Baidu | 百度</span><span class="lang-en">Baidu</span></span>
+    <!-- 我们看什么 - 5大硬核技术层级 (Program Highlights) -->
+    <section class="how-to-join" id="highlights">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="lang-zh">我们看什么？</span><span class="lang-en">What We Look At</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="pillars-grid">
+                <!-- Pillar 1 -->
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">01</div>
+                    <div class="pillar-content">
+                        <h3>
+                            <span class="lang-zh">算力基础层：中国自研算力替代方案</span>
+                            <span class="lang-en">Compute Foundation Layer: Homegrown Computing & Hardware Alternatives</span>
+                        </h3>
+                        <p class="pillar-logic">
+                            <span class="lang-zh"><strong>技术演进逻辑：</strong>大模型时代，算力是一切创新的底层基础设施。我们要看的是中国芯片自研流程以及服务器供应链的完整闭环。</span>
+                            <span class="lang-en"><strong>Technical Logic:</strong> In the LLM era, compute is the foundational infrastructure for all innovations. We explore the complete closed-loop of China's proprietary GPU development and server supply chain.</span>
+                        </p>
+                        <div class="pillar-sites-title">
+                            <span class="lang-zh">核心参访站点：</span>
+                            <span class="lang-en">Core Sites:</span>
+                        </div>
+                        <ul class="pillar-sites">
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">摩尔线程 Moore Threads</span>
+                                    <span class="site-highlight-label">GPU 实验室 / GPU Lab</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">实测中国自研 GPU 推理性能演示，探讨大模型时代的算力替代路径。</span>
+                                    <span class="lang-en">Live demonstration of homegrown GPU inference performance, discussing compute alternative paths.</span>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">联想 Lenovo</span>
+                                    <span class="site-highlight-label">未来中心 / Future Center</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">实地观察全球供应链实时调度系统。</span>
+                                    <span class="lang-en">On-site observation of the global supply chain real-time scheduling system.</span>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">数智体验 e-CNY</span>
+                                    <span class="site-highlight-label">数字人民币 / Digital RMB</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">数字人民币全程无现金无感体验之夜。</span>
+                                    <span class="lang-en">A cashless, seamless night experience using Digital RMB.</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+                <!-- Pillar 2 -->
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">02</div>
+                    <div class="pillar-content">
+                        <h3>
+                            <span class="lang-zh">AI 应用层：大语言模型与城市级无人驾驶</span>
+                            <span class="lang-en">AI Application Layer: LLMs & Urban-Scale Autonomous Driving</span>
+                        </h3>
+                        <p class="pillar-logic">
+                            <span class="lang-zh"><strong>技术演进逻辑：</strong>从底层算力向上延伸至顶层应用，看开源 AI 生态与 L4 级自动驾驶在真实城市中的落地应用与商业化。</span>
+                            <span class="lang-en"><strong>Technical Logic:</strong> Scaling up from compute layers to top-level applications, examining the real-world deployment and commercialization of open-source AI and L4 autonomous driving.</span>
+                        </p>
+                        <div class="pillar-sites-title">
+                            <span class="lang-zh">核心参访站点：</span>
+                            <span class="lang-en">Core Sites:</span>
+                        </div>
+                        <ul class="pillar-sites">
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">北京智源研究院 BAAI</span>
+                                    <span class="site-highlight-label">开源 AI 生态 / Open-source AI</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">探访中国大模型研究的源头，深度理解“悟道”模型及中国开源 AI 生态。</span>
+                                    <span class="lang-en">Visit the birthplace of Chinese foundation models to understand "Wudao" and the open-source AI ecosystem.</span>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">百度 Apollo Park (亦庄)</span>
+                                    <span class="site-highlight-label">L4 Robotaxi 体验 / L4 Robotaxi</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">全球面积最大的自动驾驶测试基地，全程无安全员试乘 L4 级 Robotaxi，感受无人驾驶接管城市交通的现状。</span>
+                                    <span class="lang-en">The world's largest autonomous driving test base, experiencing L4 Robotaxis without safety drivers.</span>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">高管人脉对话 Networking</span>
+                                    <span class="site-highlight-label">AI 沙龙 / AI Salon</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">智源 AI 开发者沙龙，与本土一线 VC、研究员 1 对 1 深度交流。</span>
+                                    <span class="lang-en">BAAI AI Developer Salon for 1-on-1 networking with local VCs and researchers.</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">03</div>
+                    <div class="pillar-content">
+                        <h3>
+                            <span class="lang-zh">学术与政策层：中国创新的底层逻辑</span>
+                            <span class="lang-en">Academic & Policy Layer: The Core Logic of China's Innovation</span>
+                        </h3>
+                        <p class="pillar-logic">
+                            <span class="lang-zh"><strong>技术演进逻辑：</strong>超越媒体叙事噪音，直接接触中国科技决策与创新现场，看“政府-市场-高校”的三角协同逻辑。</span>
+                            <span class="lang-en"><strong>Technical Logic:</strong> Cut through media noise to directly engage with policy and research engines, studying the "government-market-university" triple-helix model.</span>
+                        </p>
+                        <div class="pillar-sites-title">
+                            <span class="lang-zh">核心参访站点：</span>
+                            <span class="lang-en">Core Sites:</span>
+                        </div>
+                        <ul class="pillar-sites">
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">清华大学苏世民书院 Tsinghua</span>
+                                    <span class="site-highlight-label">闭门圆桌 / Closed-door Panel</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">中国最高规格的国际学术对话窗口，闭门圆桌探讨“中国式现代化：从制造大国到科技强国的范式转移”。</span>
+                                    <span class="lang-en">China's premium international academic window. Closed-door roundtable on "Chinese Modernization: Paradigm Shifts from Manufacturing Giant to Tech Powerhouse."</span>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">中关村展示中心 ZGC Exhibition</span>
+                                    <span class="site-highlight-label">历史与未来 / Tech Evolution</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">俯瞰中关村 40 年创新代际更迭，全面理解中国创新的演进脉络。</span>
+                                    <span class="lang-en">Overlooking 40 years of innovation cycle changes to understand the evolution of ZGC.</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">04</div>
+                    <div class="pillar-content">
+                        <h3>
+                            <span class="lang-zh">前沿技术层：具身智能机器人与生命科学</span>
+                            <span class="lang-en">Frontier Technology Layer: Embodied AI & Life Sciences</span>
+                        </h3>
+                        <p class="pillar-logic">
+                            <span class="lang-zh"><strong>技术演进逻辑：</strong>透视下一个十年最核心的前沿交叉技术——AI 如何赋能硬核物理世界。</span>
+                            <span class="lang-en"><strong>Technical Logic:</strong> Peer into the next decade's cross-disciplinary technologies: how AI empowers the physical world and biotechnology.</span>
+                        </p>
+                        <div class="pillar-sites-title">
+                            <span class="lang-zh">核心参访站点：</span>
+                            <span class="lang-en">Core Sites:</span>
+                        </div>
+                        <ul class="pillar-sites">
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">银河通用机器人 Galbot</span>
+                                    <span class="site-highlight-label">具身智能 / Embodied AI</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">具身智能（Embodied AI）赛道代表性独角兽，现场观摩机器人基于视觉大模型在非结构化复杂环境中完成抓取任务的完整演示。</span>
+                                    <span class="lang-en">Embodied AI unicorn. Live demonstration of visual model-based robot manipulation in unstructured environments.</span>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">中关村生命科学园 ZGC BioPark</span>
+                                    <span class="site-highlight-label">昌平实验室 / BeiGene</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">看 AI 驱动的生物医药革命，了解如何通过 AI 技术加速新药筛选与临床试验。</span>
+                                    <span class="lang-en">AI-driven biopharma revolution at BeiGene / Changping Laboratory, accelerating drug screening and clinical trials.</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pillar 5 -->
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">05</div>
+                    <div class="pillar-content">
+                        <h3>
+                            <span class="lang-zh">智造落地层：极致制造与 14 亿人口的物流算法</span>
+                            <span class="lang-en">Intelligent Manufacturing & Logistics: Ultra-Efficiency at Scale</span>
+                        </h3>
+                        <p class="pillar-logic">
+                            <span class="lang-zh"><strong>技术演进逻辑：</strong>感受中国“新质生产力”在制造业的最强震撼，理解中国制造效率与自动化的极致体现。</span>
+                            <span class="lang-en"><strong>Technical Logic:</strong> Experience the power of "New Productive Forces" in manufacturing and logistics, witnessing extreme automation and 1.4-billion-people scale logistics algorithms.</span>
+                        </p>
+                        <div class="pillar-sites-title">
+                            <span class="lang-zh">核心参访站点：</span>
+                            <span class="lang-en">Core Sites:</span>
+                        </div>
+                        <ul class="pillar-sites">
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">小米 EV 超级工厂 Xiaomi EV</span>
+                                    <span class="site-highlight-label">黑灯工厂 / Dark Factory</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">登上观察台，亲眼目睹高度自动化的“黑灯工厂”如何实现“76秒下线一辆小米SU7”的惊人效率。</span>
+                                    <span class="lang-en">Observe how a highly automated "dark factory" achieves the stunning efficiency of rolling out a Xiaomi SU7 every 76 seconds.</span>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="site-tag-wrapper">
+                                    <span class="site-tag">京东总部 JD.com</span>
+                                    <span class="site-highlight-label">物流算法 / Logistics AI</span>
+                                </div>
+                                <p class="site-desc">
+                                    <span class="lang-zh">实地参观末端物流机器人，看 14 亿人的大规模物流需求如何通过 AI 算法 and 自动化实现 24 小时极速达。</span>
+                                    <span class="lang-en">Tour end-to-end logistics robots and algorithms powering 24h lightning-speed delivery.</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Statement Card -->
+            <div class="value-statement-card reveal">
+                <p>
+                    <span class="lang-zh">💡 这不是碎片化的企业堆砌，而是一套完整的<strong>“中国科技竞争力图谱”</strong>。<br>7天行程首尾相连，从底层算力到顶层应用，帮助你构建一个可以独立使用的系统性认知框架，亲自回答“中国科技创新的真实边界在哪里”。</span>
+                    <span class="lang-en">💡 This is <strong>NOT</strong> a fragmented collection of enterprise visits; it is a comprehensive map of China’s tech competitiveness.<br>Connecting everything from foundational computing layers to top-tier vertical applications over 7 days, this program helps you build a systematic framework to independently evaluate the true boundaries of Chinese innovation.</span>
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- 核心价值 - Why Join -->
+    <!-- 核心价值 - 为什么值得看 (Why It Matters) -->
     <section class="values">
         <div class="container">
             <div class="section-header">
-                <h2><span class="lang-zh">为什么加入我们？</span><span class="lang-en">Why Join Decode China?</span></h2>
+                <h2><span class="lang-zh">为什么值得看？</span><span class="lang-en">Why It Matters</span></h2>
                 <div class="divider"></div>
             </div>
 
-            <div class="values-grid">
-                <div class="value-card reveal reveal-delay-1">
-                    <div class="value-icon">🧠</div>
-                    <h3><span class="lang-zh">探索全栈科技</span><span class="lang-en">Explore China's Full Tech Stack</span></h3>
-                    <p><span class="lang-zh">深入了解驱动中国崛起的系统：国产芯片、大语言模型、自动驾驶、人形机器人和数字化工厂。</span><span class="lang-en">Dive deep into the systems driving China's rise: domestic chips, LLMs, autonomous driving, humanoid robots, and digital factories.</span></p>
+            <!-- 3.1 震撼瞬间预告 -->
+            <div class="subsection" style="margin-top: 2rem;">
+                <h3 style="font-size: 1.8rem; border-left: 4px solid var(--primary-red); padding-left: 1rem; color: var(--text-primary); margin-bottom: 1.5rem;">
+                    <span class="lang-zh">⚡️ 五大震撼瞬间（感知点）</span>
+                    <span class="lang-en">⚡️ Five "Wow" Moments (Experiential)</span>
+                </h3>
+                
+                <div class="wow-grid">
+                    <!-- Wow Card 1 -->
+                    <div class="wow-card reveal">
+                        <div class="wow-icon-wrapper">💻</div>
+                        <h4>
+                            <span class="lang-zh">算力革命</span>
+                            <span class="lang-en">Compute Revolution</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">亲手操作中国自研 GPU 推理演示，直观感受其性能边界。</span>
+                            <span class="lang-en">Get hands-on with China's homegrown GPU inference demonstrations and witness the performance limits first-hand.</span>
+                        </p>
+                    </div>
+
+                    <!-- Wow Card 2 -->
+                    <div class="wow-card reveal">
+                        <div class="wow-icon-wrapper">🚗</div>
+                        <h4>
+                            <span class="lang-zh">AI大模型</span>
+                            <span class="lang-en">Autonomous AI</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">坐上百度 Apollo 无人车，在真实城市道路中体验全程无安全员的 L4 级自动驾驶。</span>
+                            <span class="lang-en">Ride in Baidu Apollo's L4 Robotaxi with zero safety drivers, experiencing autonomous driving on real urban streets.</span>
+                        </p>
+                    </div>
+
+                    <!-- Wow Card 3 -->
+                    <div class="wow-card reveal">
+                        <div class="wow-icon-wrapper">🎓</div>
+                        <h4>
+                            <span class="lang-zh">顶级学术</span>
+                            <span class="lang-en">Elite Academia</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">走进清华大学苏世民书院参与闭门圆桌，直击中国政策制定的底层逻辑。</span>
+                            <span class="lang-en">Enter Schwarzman College, Tsinghua University for a closed-door roundtable, understanding the core drivers behind China's tech policies.</span>
+                        </p>
+                    </div>
+
+                    <!-- Wow Card 4 -->
+                    <div class="wow-card reveal">
+                        <div class="wow-icon-wrapper">🦾</div>
+                        <h4>
+                            <span class="lang-zh">具身智能</span>
+                            <span class="lang-en">Embodied AI</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">现场观摩 Galbot 机器人基于视觉大模型完成杂乱物品抓取任务。</span>
+                            <span class="lang-en">Witness Galbot's visual-model-driven robots executing complex, unstructured picking tasks live.</span>
+                        </p>
+                    </div>
+
+                    <!-- Wow Card 5 -->
+                    <div class="wow-card reveal">
+                        <div class="wow-icon-wrapper">🏭</div>
+                        <h4>
+                            <span class="lang-zh">极致制造</span>
+                            <span class="lang-en">Intelligent Manufacturing</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">登上小米黑灯工厂观察台，亲眼见证 SU7 以 76 秒节拍下线。</span>
+                            <span class="lang-en">Step onto the observation platform at Xiaomi's dark factory, seeing a brand new Xiaomi SU7 roll off the line every 76 seconds.</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="value-card reveal reveal-delay-2">
-                    <div class="value-icon">🤝</div>
-                    <h3><span class="lang-zh">连接思想领袖</span><span class="lang-en">Connect with Thought Leaders</span></h3>
-                    <p><span class="lang-zh">直接与人工智能研究人员、初创企业创始人、风险投资家和企业高管交流。</span><span class="lang-en">Engage directly with AI researchers, startup founders, venture capitalists, and corporate executives.</span></p>
-                </div>
-                <div class="value-card reveal reveal-delay-3">
-                    <div class="value-icon">🚀</div>
-                    <h3><span class="lang-zh">触达前沿领域</span><span class="lang-en">Access the Frontier</span></h3>
-                    <p><span class="lang-zh">进入中国最具影响力的研究机构，从清华苏世民书院到北京智源人工智能研究院。</span><span class="lang-en">Gain access to China's most influential research institutions, from Tsinghua Schwarzman College to the Beijing Academy of Artificial Intelligence (BAAI).</span></p>
-                </div>
-                <div class="value-card reveal reveal-delay-4">
-                    <div class="value-icon">👁️</div>
-                    <h3><span class="lang-zh">亲眼见证未来</span><span class="lang-en">See It With Your Own Eyes</span></h3>
-                    <p><span class="lang-zh">在真实交通中乘坐无人驾驶出租车。观察人形机器人的运行。每一天都有重塑您认知的瞬间。</span><span class="lang-en">Ride in robotaxis in real traffic. Observe humanoid robots in action. Experience daily moments that redefine your perspective.</span></p>
-                </div>
-                <div class="value-card reveal reveal-delay-1">
-                    <div class="value-icon">💼</div>
-                    <h3><span class="lang-zh">把握未来机遇</span><span class="lang-en">Engage in Future Opportunities</span></h3>
-                    <p><span class="lang-zh">在科技与全球科技的交汇点探索协作平台、研发网络和职业路径。</span><span class="lang-en">Explore collaboration platforms, R&D networks, and career paths at the intersection of technology and global innovation.</span></p>
-                </div>
-                <div class="value-card reveal reveal-delay-2">
-                    <div class="value-icon">🌐</div>
-                    <h3><span class="lang-zh">构建全球网络</span><span class="lang-en">Build a Global Network</span></h3>
-                    <p><span class="lang-zh">结识来自各行各业和不同地区的专业人士、投资和创新。</span><span class="lang-en">Meet professionals, investors, and innovators from diverse industries and regions.</span></p>
+            </div>
+
+            <!-- 3.2 我们的核心优势 -->
+            <div class="subsection" style="margin-top: 4rem;">
+                <h3 style="font-size: 1.8rem; border-left: 4px solid var(--accent-gold); padding-left: 1rem; color: var(--text-primary); margin-bottom: 1.5rem;">
+                    <span class="lang-zh">🏆 核心差异化优势（理性点）</span>
+                    <span class="lang-en">🏆 Our Unfair Advantages (Rational)</span>
+                </h3>
+
+                <div class="advantage-grid">
+                    <!-- Advantage 1 -->
+                    <div class="advantage-card reveal">
+                        <div class="advantage-icon-wrapper">🔒</div>
+                        <h4>
+                            <span class="lang-zh">独家资源，无可复制</span>
+                            <span class="lang-en">Exclusive & Irreplacable</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">背靠中关村发展集团体系资源，独家开放稀缺的最深层访问权限。</span>
+                            <span class="lang-en">Backed by the ecosystem of the Zhongguancun Development Group (ZGC Group), offering exclusive access to deep-level tech centers.</span>
+                        </p>
+                    </div>
+
+                    <!-- Advantage 2 -->
+                    <div class="advantage-card reveal">
+                        <div class="advantage-icon-wrapper">🔗</div>
+                        <h4>
+                            <span class="lang-zh">技术演进链条完整</span>
+                            <span class="lang-en">Complete Value Chain</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">市面上唯一专注「算力 → AI → 机器人 → 智造」完整闭环的技术竞争力图谱，拒绝碎片化堆砌企业。</span>
+                            <span class="lang-en">The only program mapping tech competitiveness from compute -> AI -> robotics -> manufacturing, avoiding fragmented corporate visits.</span>
+                        </p>
+                    </div>
+
+                    <!-- Advantage 3 -->
+                    <div class="advantage-card reveal">
+                        <div class="advantage-icon-wrapper">👥</div>
+                        <h4>
+                            <span class="lang-zh">顶级嘉宾资源网络</span>
+                            <span class="lang-en">Elite Professional Network</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">开营晚宴外企高管、清华学者、BAAI研究员、Galbot创始团队、本土一线 VC 1对1交流。</span>
+                            <span class="lang-en">1-on-1 networking opportunities with tech executives, Tsinghua scholars, BAAI researchers, Galbot founders, and local VCs.</span>
+                        </p>
+                    </div>
+
+                    <!-- Advantage 4 -->
+                    <div class="advantage-card reveal">
+                        <div class="advantage-icon-wrapper">🏮</div>
+                        <h4>
+                            <span class="lang-zh">文化与科技并举</span>
+                            <span class="lang-en">Tech Meets Culture</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">故宫角楼围炉夜话、胡同私房菜、亮马河畔晚宴，在理解未来的同时感受文明底色。</span>
+                            <span class="lang-en">Fireside chats at the Forbidden City Turret, traditional Hutong dining, and Liangma River cruises—feel the depth of culture while understanding the future.</span>
+                        </p>
+                    </div>
+
+                    <!-- Advantage 5 -->
+                    <div class="advantage-card reveal">
+                        <div class="advantage-icon-wrapper">📜</div>
+                        <h4>
+                            <span class="lang-zh">中关村北美品牌背书</span>
+                            <span class="lang-en">Global Ecosystem Credentials</span>
+                        </h4>
+                        <p>
+                            <span class="lang-zh">正式成为中关村全球创新生态圈成员，获得官方结业证书，在简历与求职中形成独特的差异化标签。</span>
+                            <span class="lang-en">Become a member of the ZGC global innovation network and receive an official completion certificate to boost your credentials.</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 如何参与 -->
-    <section class="how-to-join">
+    <!-- 谁适合来看 - 目标受众画像 (User Personas) -->
+    <section class="audience-section-new" id="audience">
         <div class="container">
             <div class="section-header">
-                <h2><span class="lang-zh">项目亮点</span><span class="lang-en">Program Highlights</span></h2>
+                <h2><span class="lang-zh">目标受众画像</span><span class="lang-en">User Personas</span></h2>
                 <div class="divider"></div>
             </div>
+            
+            <div class="persona-grid">
+                <!-- Persona Card 1 -->
+                <div class="persona-card reveal">
+                    <div class="persona-avatar">🎓</div>
+                    <div class="persona-badge">MBA Student</div>
+                    <h4>
+                        <span class="lang-zh">顶尖海外商学院 MBA 学员</span>
+                        <span class="lang-en">Top Business School MBA Students</span>
+                    </h4>
+                    <p class="persona-desc">
+                        <span class="lang-zh">来自哈佛、MIT斯隆、哥大、西北凯洛格等顶尖商学院，未来有意在科技、咨询、VC/PE 领域发展，希望在毕业前建立系统认知。</span>
+                        <span class="lang-en">Students from top schools (Harvard, MIT Sloan, Columbia, Kellogg, etc.) aspiring to enter tech, consulting, or VC/PE, seeking a systemic understanding before graduation.</span>
+                    </p>
+                </div>
 
-            <div class="join-grid reveal">
-                <div class="values-grid">
-                    <div class="value-card reveal">
-                        <div class="value-icon">🚀</div>
-                        <h3><span class="lang-zh">自研 GPU 深度调研</span><span class="lang-en">GPU Deep Dive</span></h3>
-                        <p>
-                            <span class="lang-zh">摩尔线程 Moore Threads：深入解析国产 GPU 算力引擎。</span>
-                            <span class="lang-en">Moore Threads: Decoding domestic GPU computing engines.</span>
-                        </p>
-                    </div>
-                    <div class="value-card reveal">
-                        <div class="value-icon">🤖</div>
-                        <h3><span class="lang-zh">L4 Robotaxi 体验</span><span class="lang-en">L4 Robotaxi
-                                Experience</span></h3>
-                        <p>
-                            <span class="lang-zh">百度 Apollo：亲自乘坐无人驾驶出租车，探讨出行未来。</span>
-                            <span class="lang-en">Baidu Apollo: Ride in an L4 Robotaxi and discuss the future of
-                                mobility.</span>
-                        </p>
-                    </div>
-                    <div class="value-card reveal">
-                        <div class="value-icon">🎓</div>
-                        <h3><span class="lang-zh">清华闭门圆桌</span><span class="lang-en">Tsinghua Closed-door Panel</span>
-                        </h3>
-                        <p>
-                            <span class="lang-zh">苏世民书院：与专家探讨地缘政治与硬科技投资。</span>
-                            <span class="lang-en">Schwarzman College: Expert panel on geopolitics and hard-tech
-                                investment.</span>
-                        </p>
-                    </div>
-                    <div class="value-card reveal">
-                        <div class="value-icon">🦾</div>
-                        <h3><span class="lang-zh">Galbot 机器人演示</span><span class="lang-en">Galbot Robot Demo</span></h3>
-                        <p>
-                            <span class="lang-zh">具身智能：现场观摩机器人执行复杂柔性任务。</span>
-                            <span class="lang-en">Embodied AI: Witness humanoid robots performing complex tasks.</span>
-                        </p>
-                    </div>
+                <!-- Persona Card 2 -->
+                <div class="persona-card reveal">
+                    <div class="persona-avatar">🚀</div>
+                    <div class="persona-badge">Tech & VC</div>
+                    <h4>
+                        <span class="lang-zh">科技与创投从业者</span>
+                        <span class="lang-en">Tech & VC Professionals</span>
+                    </h4>
+                    <p class="persona-desc">
+                        <span class="lang-zh">在硅谷或纽约从事科技产品、战略或投资工作，希望通过实地走访获取一线市场洞察，评估对全球产业格局的影响。</span>
+                        <span class="lang-en">Silicon Valley or NYC-based product, strategy, or investment professionals looking for first-hand market insights to evaluate global shifts.</span>
+                    </p>
+                </div>
+
+                <!-- Persona Card 3 -->
+                <div class="persona-card reveal">
+                    <div class="persona-avatar">🔍</div>
+                    <div class="persona-badge">Consultant</div>
+                    <h4>
+                        <span class="lang-zh">战略咨询专业人士</span>
+                        <span class="lang-en">Strategic Consultants</span>
+                    </h4>
+                    <p class="persona-desc">
+                        <span class="lang-zh">服务全球的战略顾问，需要理解中国供应链、技术替代及数字化转型趋势，以更好地为跨国客户提供建议。</span>
+                        <span class="lang-en">Global management consultants who need to understand China's supply chains, tech alternatives, and digital transformation to advise multinational clients.</span>
+                    </p>
+                </div>
+
+                <!-- Persona Card 4 -->
+                <div class="persona-card reveal">
+                    <div class="persona-avatar">🎯</div>
+                    <div class="persona-badge">Strategist</div>
+                    <h4>
+                        <span class="lang-zh">企业战略管理者</span>
+                        <span class="lang-en">The Tech Strategist</span>
+                    </h4>
+                    <p class="persona-desc">
+                        <span class="lang-zh">跨国企业中国战略负责人、政府与智库研究人员，需要超越媒体叙事噪音，直接接触中国科技决策与创新现场。</span>
+                        <span class="lang-en">China heads at multinationals, researchers, and think-tank analysts looking to bypass media noise and gain direct access to policy and innovation engines.</span>
+                    </p>
                 </div>
             </div>
         </div>
